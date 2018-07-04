@@ -50,7 +50,50 @@ namespace Day_7
             }
         }
 
+        public void Tresais()
+        {
+            // parveidot pirmo uzd ta lai izmantotu while ciklu. 
+            int summa = 0;
+            int skaititajs = 1;
+            while (skaititajs != 10)
+            {
+                int reiz = skaititajs * 2;
+                summa = summa + reiz;
+                skaititajs++;
+            }
+            Console.WriteLine("Summa ir " + summa);
+
+        }
+        public void Ceturtais()
+        {
+            int skaititajs = 0;
+            do
+            {
+                Console.WriteLine("Uzminat skaitli!");
+                string atbilde = Console.ReadLine();
+                int otrs = Convert.ToInt16(atbilde);
+
+                if (otrs == 11)
+                {
+                    Console.WriteLine("success");
+                    break;
+                }
+                else
+                {
+                    if (skaititajs == 4)
+                    {
+                        Console.WriteLine("Mēģinājumi beigušies");
+                    }
+                    else
+                    {
 
 
+                        Console.WriteLine("Mēģini vēlreiz");
+                    }
+                }
+                skaititajs++;
+            } while (skaititajs != 5);
+        }
     }
+
 }
