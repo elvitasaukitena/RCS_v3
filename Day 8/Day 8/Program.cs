@@ -11,11 +11,13 @@ namespace Day_8
         static void Main(string[] args)
         {
             CikluUzdevumi sis = new CikluUzdevumi();
+            Masivi arr = new Masivi();
             string input = "";
             while (input != "0")
             {
                 Console.WriteLine("Izveleties uzdevumu");
                 Console.WriteLine("1 - cikli");
+                Console.WriteLine("2 - masivi");
                 Console.WriteLine("0 - iziet");
                 input = Console.ReadLine();
 
@@ -23,6 +25,9 @@ namespace Day_8
                 {
                     case "1":
                         sis.Zvaigznite();
+                        break;
+                    case "2":
+                        arr.IzvaditMasivu();
                         break;
                     case "0":
                         break;
